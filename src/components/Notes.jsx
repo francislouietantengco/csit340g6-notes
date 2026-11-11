@@ -55,7 +55,6 @@ function Notes() {
           <p className="mb-2 text-[13px] font-normal tracking-wide text-[#949494]">
             SEARCH
           </p>
-          {/* STEP 8: controlled input, updates "search" on every keystroke */}
           <input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -111,7 +110,6 @@ function Notes() {
             </li>
           ))}
         </ul>
-
         {visibleNotes.length === 0 && (
           <p className="text-lg text-[#949494]">No notes found</p>
         )}
